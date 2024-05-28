@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-ctn{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.back-img{
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 80vw;
+    height: 85vh;
+    background-color: rgb(238, 241, 238);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 40px;
+    padding: 70px;
+    
+}
+
+.content-wrapper{
+    display: flex;
+}
+
+.person-img{
+    margin-left: 20px;
+    height: 620px;
+    width: 53vw;
+    margin-top: 10px;
+}
+
+.shadow-box{
+    width: 400px;
+    height: 620px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    
+}
+
+
+.login-h{
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.parag{
+    display: flex;
+    font-size: 20px;
+    margin-left: 18px;
+    gap: 5px;
+}
+
+.parag a {
+    text-decoration: none;
+}
+
+.parag a:hover {
+    text-decoration: underline;
+}
+
+.email{
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    gap: 1px;
+}
+
+.ip{
+    height: 40px;
+    width: 18vw;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 11px;
+    background-color: white;
+    border: 2px solid rgb(142, 135, 135);
+    outline: none;
+}
+
+.pass{
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    gap: 1px;
+}
+
+.password-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.forget-pass{
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.forget-pass:hover{
+    text-decoration: underline;
+}
+
+
+.ip1{
+    height: 40px;
+    width: 18vw;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 11px;
+    background-color: white;
+    border: 2px solid rgb(142, 135, 135);
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.log-btn{
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 55px;
+    margin-top: 40px;
+    background-color: blueviolet;
+    border: 2px solid rgb(142, 135, 135);
+    outline: none;
+    border-radius: 11px;
+    color: aliceblue;
+    font-family: serif;
+    cursor: pointer;
+    font-weight: 150px;
+}
+
+
+.divisor{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 20px 20px;
+    font-size: 16px;
+    color: rgb(142, 135, 135);
+}
+
+.divisor .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(142, 135, 135);
+}
+
+.divisor .text {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.google-btn,.facebook-btn{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.google-btn{
+    margin-left: 35px;
+    margin-right: 20px;
+    color: red;
+    border-color: red;
+    
+}
+
+.facebook-btn{
+    color: blue;
+    border-color: blue;
+}
+
+.google-btn .gbtn-logo, .facebook-btn .fbtn-logo {
+    width: 20px;
+    height: 20px;
+    background: none;
+}
+
+.google-btn .gbtn-logo{
+    height: 22px;
+    width: 20px;
+}
+
+
+
+
