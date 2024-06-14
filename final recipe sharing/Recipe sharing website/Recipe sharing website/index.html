@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container" id="herro">
+            <h1 class="logo">Delicious Recipe</h1>
+            <nav>
+                <div class="menu-icon">&#9776;</div>
+                <ul class="nav-list">
+                    <li><a href="#heros">Home</a></li>
+                    <li><a href="#re">Recipe</a></li>
+                    <li><a href="#add">Add Recipe</a></li>
+                    <li><a href="#cont">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-----------------Start Hero section----------------->
+    <section class="hero" id="heros">
+        <div class="hero-section">
+            <h2>Welcome to our Healthy Recipe collection</h2>
+            <p class="para">Search A Healthy Recipe for Healthy Life.</p>
+
+            <form id="search-form" class="search-box">
+                <input type="text" id="search-input" placeholder="Search Recipe">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    <!-----------------End Hero section----------------->
+
+    <!-----------------Recipe Section----------------->
+    <section class="recipes" id="re">
+        <h1>Featured Recipes</h1>
+        <div class="recipe-section" id="recipe-section">
+            <div class="recipe-card" data-recipe="1">
+                <img src="dish-1.jpg" alt="not available">
+                <h2>Strawberry Custard</h2>
+                <p><strong>Strawberry custard</strong> is a creamy, dreamy dessert that combines the rich flavor of
+                    custard.</p>
+                <p><strong>Calories:</strong>330 kcal</p>
+                <p><strong>Proteins:</strong>6 grams</p>
+                <a href="#" class="view-recipe">View Recipe</a>
+            </div>
+            <div class="recipe-card" data-recipe="2">
+                <img src="dish-2.jpg" alt="not available">
+                <h2>Blueberry Pancakes</h2>
+                <p><strong>Blueberry pancakes</strong> are fluffy, delicious breakfast treats with fresh blueberries.
+                </p>
+                <p><strong>Calories:</strong>350 kcal</p>
+                <p><strong>Proteins:</strong>10 grams</p>
+                <a href="#" class="view-recipe">View Recipe</a>
+            </div>
+            <div class="recipe-card" data-recipe="3">
+                <img src="dish-3.jpg" alt="not available">
+                <h2>Chicken Salad</h2>
+                <p><strong>Chicken salad</strong> is a healthy mix of chicken, veggies, and a light dressing.</p>
+                <p><strong>Calories:</strong>350 kcal</p>
+                <p><strong>Proteins:</strong>25 grams</p>
+                <a href="#" class="view-recipe">View Recipe</a>
+            </div>
+            <div class="recipe-card" data-recipe="4">
+                <img src="dish-4.jpg" alt="not available">
+                <h2>Vegan Tacos</h2>
+                <p><strong>Vegan tacos</strong> are packed with fresh vegetables and savory plant-based protein.</p>
+                <p><strong>Calories:</strong>200 kcal</p>
+                <p><strong>Proteins:</strong>8 grams</p>
+                <a href="#" class="view-recipe">View Recipe</a>
+            </div>
+            <div class="recipe-card" data-recipe="5">
+                <img src="fish-dish.jpg" alt="not available">
+                <h2>Grilled Salmon</h2>
+                <p><strong>Grilled salmon</strong> is a perfect blend of succulent fish and flavorful spices.</p>
+                <p><strong>Calories:</strong>400 kcal</p>
+                <p><strong>Proteins:</strong>40 grams</p>
+                <a href="#" class="view-recipe">View Recipe</a>
+            </div>
+            <div class="recipe-card" data-recipe="6">
+                <img src="tea.jpeg" alt="not available">
+                <h2>Milk tea</h2>
+                <p><strong>Milk Tea</strong> is a delightful combination of tea and milk, often sweetened and sometimes
+                    spiced.</p>
+                <p><strong>Calories:</strong> 150 kcal</p>
+                <p><strong>Proteins:</strong> 3 grams</p>
+                <a href="#" class="view-recipe">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="recipe-details"></div>
+        </div>
+    </div>
+
+    <section class="Add-recipe" id="add">
+        <h1>Add a New Recipe</h1>
+        <form id="add-recipe-form">
+            <input type="text" id="recipe-title" placeholder="Recipe Title" required>
+            <textarea id="recipe-description" placeholder="Recipe Description" required></textarea>
+            <textarea id="recipe-ingredients" placeholder="Recipe Ingredients" required></textarea>
+            <textarea id="recipe-instructions" placeholder="Recipe Instructions" required></textarea>
+            <input type="text" id="recipe-image" placeholder="Image URL" required>
+            <input type="number" id="recipe-calories" placeholder="Calories" required>
+            <input type="text" id="recipe-proteins" placeholder="Proteins" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+    <section class="contact" id="cont">
+        <h2>Contact</h2>
+        <div class="contact2">
+            <a href="tel:9676336834"><img class="cel" src="call.png" alt="phone"></a>
+            <a href="tel:https://chat.whatsapp.com/EcMHrYn1uinCjGSCHnor4u"><img class="what" src="whatsapp.png"
+                    alt="whatsapp"></a>
+            <a href="https://www.linkedin.com/in/katravath-rakesh-6b75712a5/"><img class="linkin" src="linkin.jpg"
+                    alt="not available"></a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 Delicious Recipes</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
