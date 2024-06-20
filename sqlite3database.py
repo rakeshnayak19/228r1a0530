@@ -1,0 +1,12 @@
+import sqlite3
+con=sqlite3.connect("mydatabase.db")
+cur=con.cursor()
+#cur.execute("create table student(name varchar(20),rollno varchar(20),section varchar(20))")
+#cur.execute('insert into student values("manogna","228r1a0531","CSE-A")')
+#cur.execute('insert into student values("pari","228r1a0511","CSE-A")')
+#cur.execute('insert into student values("mayu","228r1a0510","CSE-A")')
+#x=cur.execute('delete from student where rollno="228r1a0531"')
+#cur.execute('update student set rollno="228r1a0516" where name="mayu"')
+x=cur.execute('select * from student')
+print(x.fetchall())
+con.commit()
